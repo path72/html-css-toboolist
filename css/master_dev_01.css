@@ -136,11 +136,13 @@ li h3::before {
 }
 
 /* FOOTER */
+.form {
+  /* width: 31%; */
+  /* margin: auto; */
+}
 .form_email {
-  display: inline-block;
-  align: center;
-  /* padding: 20px; */
-  /* margin: 0 auto; */
+  width: 31%;
+  margin: auto;
 }
 .email {
   padding: 8px 6px;
