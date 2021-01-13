@@ -1,0 +1,125 @@
+/* prescrizioni generali */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e7e7e7;
+  font-family: 'Roboto', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* INTESTAZIONE */
+header {
+  height: 100px;
+  background-color: white;
+  margin-bottom: 40px;
+  padding: 25px;
+}
+.logo {
+  height: 100%;
+  vertical-align: middle; /* buono per inline-block */
+}
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+/* BLOCCO CONTENUTI */
+.container {
+  width: 70%;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* PULSANTI SUPERIORI */
+.top-buttons {
+  height: 60px;
+  padding: 0 50px; /* left: uguale .task-block */
+  border-bottom: 2px solid #e7e7e7;
+  line-height: 60px; /* come height: 1 sola linea testo in div > centra verticalmente */
+}
+.btn {
+  border: 1px solid #d2d2d2;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+.btn-task {
+  background-color: #2e92cd;
+  color: white;
+}
+.btn-section {
+  background-color: white;
+  color: #d2d2d2;
+}
+
+/* TASK SECTION */
+.task-block {
+  padding: 20px 50px; /* left: uguale .top-buttons */
+}
+li {
+  list-style: none;
+  padding: 10px 0;
+  color: #434851;
+}
+li h3::before {
+  content: "\25bc";
+  /* margin-right: 0 10px; */
+  font-size: 12px;
+  padding: 0 5px;
+}
+
+/* TASK CHECKMARK */
+.checkmark::before { /* before con before: stesso oggetto modificato in due classi */
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.checkmark.checked::before { /* before con before: stesso oggetto modificato in due classi */
+  content: "\00a0\2713\00a0"; /* UNICODE! */
+  color: green;
+  border: 1px solid green;
+}
+.checkmark.unchecked::before {
+  content: "\00a0\2715\00a0"; /* UNICODE! */
+  color: red;
+  border: 1px solid red;
+}
+
+/* LABELS */
+.label::before { /* before con before: stesso oggetto modificato in due classi */
+  font-size: 10px;
+  padding: 6px 8px;
+  border-radius: 12px;
+  color: white;
+}
+.label-editorial::before { /* before con before: stesso oggetto modificato in due classi */
+  content: "Editorial";
+  background-color: #2e92cd;
+}
+.label-q1goals::before {
+  content: "Q1 Goals";
+  background-color: #8e2cbe;
+}
+.label-recruiting::before {
+  content: "Recruiting";
+  background-color: #1fa865;
+}
+.label-mobile::before {
+  content: "Mobile";
+  background-color: #f1a213;
+}
+.label-website::before {
+  content: "Website";
+  background-color: #be3095;
+}
+.label-sales::before {
+  content: "Sales";
+  background-color: #8bc433;
+}
