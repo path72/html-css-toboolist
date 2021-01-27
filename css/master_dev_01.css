@@ -1,8 +1,3 @@
-/************************************
-  BRANCH: MAIN (controllo esercizi)
-  aggiunta footer (ultima versione)
-************************************/
-
 /* prescrizioni generali */
 * {
   margin: 0;
@@ -76,7 +71,6 @@ li {
 }
 li h3::before {
   content: "\25bc";
-  /* margin-right: 0 10px; */
   font-size: 12px;
   padding: 0 5px;
 }
@@ -85,14 +79,15 @@ li h3::before {
 .checkmark::before { /* before con before: stesso oggetto modificato in due classi */
   margin-right: 10px;
   border-radius: 50%;
+  padding: 0 4px;
 }
 .checkmark.checked::before { /* before con before: stesso oggetto modificato in due classi */
-  content: "\00a0\2713\00a0"; /* UNICODE! */
+  content: "\2713"; /* UNICODE! */
   color: green;
   border: 1px solid green;
 }
 .checkmark.unchecked::before {
-  content: "\00a0\2715\00a0"; /* UNICODE! */
+  content: "\2715"; /* UNICODE! */
   color: red;
   border: 1px solid red;
 }
@@ -103,6 +98,8 @@ li h3::before {
   padding: 6px 8px;
   border-radius: 12px;
   color: white;
+  vertical-align: middle;
+  margin-left: 10px;
 }
 .label-editorial::before { /* before con before: stesso oggetto modificato in due classi */
   content: "Editorial";
@@ -131,8 +128,7 @@ li h3::before {
 
 /* FOOTER */
 .form_email {
-  width: 31%;
-  margin: auto;
+  text-align: center;
 }
 .email {
   padding: 8px 6px;
